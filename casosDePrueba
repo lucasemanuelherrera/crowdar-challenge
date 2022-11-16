@@ -1,0 +1,34 @@
+FEATURE: Inicio de sesion
+Como usuario Swaglabs
+Quiero iniciar sesion en la web
+Para hacer uso de la misma
+
+Background:
+Given El usuario se encuentra en la pagina de inicio de sesion
+When Ingresa el usuario <username>
+And Ingresa  la constaseña <password>
+And Hace click en el botón 'Login'
+Then Visualizar el mensaje <mensaje>
+
+Scenario Outline: Inicio de Sesion - Campo username
+Example:
+|   username    |   password    |   mensaje                                                     |
+|               |               | Epic sadface: Username is required                            |
+|               | secret_sauce  | Epic sadface: Username is required                            |
+| userTest      | secret_sauce  | Epic sadface: Username and password do not match any user in this service   |
+| -123test      | secret_sauce  | Epic sadface: Username and password do not match any user in this service   |
+
+Scenario Outline: Inicio de Sesion - Campo password
+Example:
+|   username    |   password    |   mensaje                                                     |
+| standard_user |               | Epic sadface: Password is required                            |
+| standard_user | 123456        | Epic sadface: Username and password do not match any user in this service   |
+| standard_user | -123pass      | Epic sadface: Username and password do not match any user in this service   |
+
+Scenario Outline: Inicio de Sesion - Logueo de usuario
+Example:
+Example:
+|   username    |   password    |   mensaje                             |
+| STANDARD_USER | SECRET_SAUCE  | Epic sadface: Username and password do not match any user in this service   |
+| standard_user | secret_sauce  | PRODUCTS                              |
+
