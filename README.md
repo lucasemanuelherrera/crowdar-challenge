@@ -7,6 +7,7 @@ El proyecto incluye el archivo `casosDePrueba` en donde se describen los escenar
 
 Ingresar a [crowdar-challenge](https://github.com/lucasemanuelherrera/crowdar-challenge) para clonar el repositorio desde GitHub. 
 
+     git clone https://github.com/lucasemanuelherrera/crowdar-challenge.git
 ## Ejecutar las pruebas con Maven
 
 Para ejecutar las pruebas debes abrir la consola de comando y ejecutar:
@@ -21,4 +22,4 @@ Abrir la consola de comando y ejecutar:
 
 ## Reporte de ejecución
 
-El reporte de ejecución se encuentra en el directorio `target/site/serenity/idex.html`, generado luego de cada ejecución del proyecto.
+El reporte de ejecución con capturas y step by step se encuentra en el directorio `target/site/serenity/idex.html`, generado luego de cada ejecución del proyecto.
