@@ -1,25 +1,24 @@
-# Serenity JUnit Starter project
+# Serenity JUnit Starter Project - Crowdar Challenge
 
-Get started quickly with Serenity BDD and JUnit 5 with this simple starter project. 
+Proyecto que incluye pruebas automaticas de una pagina Login. 
+El proyecto incluye el archivo `casosDePrueba` en donde se describen los escenarios.
 
-## Get the code
+## Repositorio GitHub
 
-Click on the [Use This Template button](https://github.com/serenity-bdd/serenity-junit-starter/generate) to create a new project in your own Github account. 
+Ingresar a [crowdar-challenge](https://github.com/lucasemanuelherrera/crowdar-challenge) para clonar el repositorio desde GitHub. 
 
-Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-starter/archive/master.zip) file.
+## Ejecutar las pruebas con Maven
 
-## Running the tests under Maven
-
-The template project comes with both Maven and Gradle build scripts. To run the tests with Maven, open a command window and run:
+Para ejecutar las pruebas debes abrir la consola de comando y ejecutar:
 
     mvn clean verify
 
-## Use Gradle
+## Ejecutar con Firefox 
 
-For gradle, pen a command window and run:
+Abrir la consola de comando y ejecutar:
 
-    gradlew test 
+    mvn clean verify -Dwebdriver.driver=firefox 
 
-## Viewing the reports
+## Reporte de ejecución
 
-Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
+El reporte de ejecución se encuentra en el directorio `target/site/serenity/idex.html`, generado luego de cada ejecución del proyecto.
